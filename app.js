@@ -156,12 +156,12 @@
   measure();
 
   /* ---------- loop ---------- */
-  var nav=$('#nav'),prog=$('#prog');
+  var nav=$('#nav'),prog=$('#prog'),fab=$('.fab');
   function frame(now){
     sy=scrollY;sp=reduce?sy:sp+(sy-sp)*.14;if(Math.abs(sy-sp)<.1)sp=sy;
     for(var k in sc){var s=sc[k];s.p=clamp((sp-s.top)/Math.max(1,s.h-vh));
       if(sp>s.top-vh&&sp<s.top+s.h)fn[k](s.p,now)}
-    nav.classList.toggle('solid',sy>40);
+    nav.classList.toggle('solid',sy>40);fab.classList.toggle('hide',sy<vh*.5);
     var doc=document.documentElement.scrollHeight-vh;
     prog.style.transform='scaleX('+(doc>0?clamp(sy/doc):0).toFixed(4)+')';
     requestAnimationFrame(frame);

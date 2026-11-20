@@ -91,7 +91,7 @@ h2 .serif{text-transform:none;font-size:1.15em}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:999px;background:rgba(5,10,18,.55);border:1px solid var(--line);backdrop-filter:blur(8px)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--wa);animation:ping 1.8s infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}100%{box-shadow:0 0 0 10px rgba(37,211,102,0)}}
-h1{font-family:Anton,sans-serif;font-weight:400;font-size:clamp(38px,min(11vw,9.5vh),104px);line-height:1;text-transform:uppercase;margin:18px 0 14px;text-shadow:0 4px 40px rgba(0,0,0,.5)}
+h1{font-family:Anton,sans-serif;font-weight:400;font-size:clamp(44px,min(15vw,11vh),120px);line-height:1;text-transform:uppercase;margin:18px 0 14px;text-shadow:0 4px 40px rgba(0,0,0,.5)}
 h1 em{color:var(--gold)}
 .grad{background:linear-gradient(90deg,#fff,#ffd88a 50%,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{max-width:520px;font-size:clamp(15px,4.2vw,19px);color:#efe6da}
@@ -203,6 +203,8 @@ input.bad{border-color:#ff5d5d}
 .d1{transition-delay:.12s!important}.d2{transition-delay:.24s!important}.d3{transition-delay:.36s!important}
 
 /* ---------- Tablet ---------- */
+@media (max-width:699px){.hero .btn.ghost{display:none}}
+.fab{transition:opacity .3s,transform .3s}.fab.hide{opacity:0;transform:scale(.5);pointer-events:none}
 @media (min-width:700px){
   :root{--gut:32px}
   .cta{flex-direction:row;max-width:none}
