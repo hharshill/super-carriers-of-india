@@ -1,22 +1,20 @@
-# Super Carriers of India – Landing Page
+# Super Carriers of India — Existing Website
 
-Mobile-first cinematic landing page for a logistics & courier company.
-Plain HTML/CSS/JS – no build step. WhatsApp Business: +91 98246 25024.
+This package updates the original cinematic, scroll-animated website. It preserves the existing HTML/CSS/JavaScript structure, animations, network map, horizontal services section, process, reviews, quote form, and supplied logo.
 
-## Go live on GitHub Pages
-1. Create a new public repo on github.com (e.g. `super-carriers-of-india`).
-2. Upload everything in this folder (or run the commands below).
-3. Repo → Settings → Pages → Source: `main` branch, `/ (root)` → Save.
-4. Your site: `https://<your-username>.github.io/super-carriers-of-india/`
+## Changes made
+- Removed all use of the prohibited service term throughout the website.
+- Replaced the former express parcel service card with **Goods Transportation**.
+- Updated page title, description, social metadata and WhatsApp enquiry wording to logistics and transportation.
+- Added both contact numbers: +91 98246 25024 and +91 93752 20331.
+- Added the supplied Ahmedabad business address and a map link.
+- Kept the existing logo, design, styling, animations and page structure.
 
-```bash
-git init -b main
-git add .
-git commit -m "Super Carriers of India landing page"
-git remote add origin https://github.com/<your-username>/super-carriers-of-india.git
-git push -u origin main
-```
+## Business address
+Super Carrier's of India, 25 Calico Nagar, Behind Hotel Windsome, Narol–Sarkhej Road, Narol, Ahmedabad – 382405, Gujarat, India.
 
-## Edit
-- Phone number: search `919824625024` in `index.html` and `app.js`.
-- Reviews: replace the sample reviews in the `#reviews` section with real ones.
+## Deploy
+Upload these files to the root of the existing `hharshill/super-carriers-of-india` GitHub repository on the `main` branch, replacing files with the same names. Keep `.nojekyll` and the `assets` folder. Do not create a new repository.
+
+## Important
+The existing review quotes are retained from the supplied source website. Confirm they are genuine and approved before publishing.

@@ -244,3 +244,11 @@ input.bad{border-color:#ff5d5d}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+
+
+/* Updated contact details */
+.phone-list{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}
+.phone-list .phone{margin-top:16px}
+.foot-address{display:grid;gap:7px;width:100%;max-width:var(--max);padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.7}
+.foot-address b{color:var(--gold);font-family:Anton,sans-serif;font-weight:400;letter-spacing:.1em;font-size:15px}
+.foot-address a{color:var(--gold);text-decoration:none;font-size:12px}
