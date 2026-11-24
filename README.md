@@ -1,20 +1,15 @@
-# Super Carriers of India — Existing Website
+# Super Carriers of India — Existing Website Update
 
-This package updates the original cinematic, scroll-animated website. It preserves the existing HTML/CSS/JavaScript structure, animations, network map, horizontal services section, process, reviews, quote form, and supplied logo.
+This update is based on the existing website repository and preserves its original page structure, color palette, sunset background, sections, typography, navigation, animations, contact links, and supplied logo.
 
-## Changes made
-- Removed all use of the prohibited service term throughout the website.
-- Replaced the former express parcel service card with **Goods Transportation**.
-- Updated page title, description, social metadata and WhatsApp enquiry wording to logistics and transportation.
-- Added both contact numbers: +91 98246 25024 and +91 93752 20331.
-- Added the supplied Ahmedabad business address and a map link.
-- Kept the existing logo, design, styling, animations and page structure.
+## Truck improvements
+- Keeps the photorealistic dark navy truck and the existing green/orange trailer stripes.
+- Keeps the complete company name and tagline centered on the trailer: SUPER CARRIERS / OF INDIA / SERVICE ALL OVER INDIA & GLOBE.
+- Separates the five wheel hubs into transparent overlays and rotates them in sync with the truck's horizontal movement using the full tyre rolling radius.
+- The truck and all branding move together; the hubs rotate only when the truck changes position.
+- Keeps the existing scroll-driven truck movement and subtle suspension motion.
 
-## Business address
-Super Carrier's of India, 25 Calico Nagar, Behind Hotel Windsome, Narol–Sarkhej Road, Narol, Ahmedabad – 382405, Gujarat, India.
+## GitHub update
+Upload/replace `index.html`, `app.js`, and `style.css` at the root of the existing `hharshill/super-carriers-of-india` repository. Upload the contents of `assets/` into the existing `assets/` folder, including the realistic truck and five `wheel-hub-*.png` files. Keep `.nojekyll` and the existing logo.
 
-## Deploy
-Upload these files to the root of the existing `hharshill/super-carriers-of-india` GitHub repository on the `main` branch, replacing files with the same names. Keep `.nojekyll` and the `assets` folder. Do not create a new repository.
-
-## Important
-The existing review quotes are retained from the supplied source website. Confirm they are genuine and approved before publishing.
+Do not create a new repository.

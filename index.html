@@ -55,47 +55,18 @@
       <canvas class="dust" id="dust" aria-hidden="true"></canvas>
       <div class="ground"><div class="road"><i></i></div></div>
       <div class="truckwrap" id="truck" aria-hidden="true">
-        <svg class="truck" viewBox="0 0 900 270">
-          <defs>
-            <linearGradient id="gTrailer" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3446"/><stop offset=".08" stop-color="#1a2230"/><stop offset=".6" stop-color="#0c121b"/><stop offset="1" stop-color="#070b12"/></linearGradient>
-            <linearGradient id="gCab" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34405a"/><stop offset=".15" stop-color="#1b2433"/><stop offset="1" stop-color="#090e16"/></linearGradient>
-            <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd48a"/><stop offset=".5" stop-color="#ff8c3a"/><stop offset="1" stop-color="#6b2a2a"/></linearGradient>
-            <linearGradient id="gTank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9dfe8"/><stop offset=".5" stop-color="#7c8797"/><stop offset="1" stop-color="#2b3240"/></linearGradient>
-            <radialGradient id="gRim" cx=".4" cy=".35"><stop offset="0" stop-color="#aeb8c8"/><stop offset=".6" stop-color="#566175"/><stop offset="1" stop-color="#232a38"/></radialGradient>
-            <linearGradient id="gStripe" x1="0" x2="1"><stop offset="0" stop-color="#0f8f6b"/><stop offset="1" stop-color="#16c892"/></linearGradient>
-          </defs>
-          <ellipse cx="450" cy="262" rx="430" ry="9" fill="#000" opacity=".55"/>
-          <!-- trailer -->
-          <rect x="14" y="34" width="572" height="158" rx="7" fill="url(#gTrailer)"/>
-          <rect x="14" y="34" width="572" height="3" rx="1.500" fill="#ffb25b" opacity=".85"/>
-          <g stroke="#ffffff" stroke-opacity=".05" stroke-width="2">
-            <path d="M54 40v148M94 40v148M134 40v148M174 40v148M214 40v148M254 40v148M294 40v148M334 40v148M374 40v148M414 40v148M454 40v148M494 40v148M534 40v148"/>
+        <svg class="truck" viewBox="0 0 900 300" role="img" aria-label="Super Carriers of India realistic logistics truck">
+          <image href="assets/hero-truck-realistic.png" x="0" y="0" width="900" height="300" preserveAspectRatio="none"/>
+          <g text-anchor="middle" pointer-events="none" class="truck-brand">
+            <text x="342" y="105" fill="#f7f8f7" font-family="Anton, Impact, sans-serif" font-size="27" font-weight="900" letter-spacing="1.8">SUPER CARRIERS</text>
+            <text x="342" y="127" fill="#ffc35c" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="3.8">OF INDIA</text>
+            <text x="342" y="139" fill="#e2e9e6" font-family="Inter, Arial, sans-serif" font-size="6.2" font-weight="700" letter-spacing="1.35">SERVICE ALL OVER INDIA &amp; GLOBE</text>
           </g>
-          <rect x="14" y="128" width="572" height="14" fill="url(#gStripe)"/>
-          <rect x="14" y="142" width="572" height="3" fill="#ff7a1a"/>
-          <text x="38" y="100" fill="#eef5f2" font-family="Anton, Impact, sans-serif" font-size="34" letter-spacing="4">SUPER CARRIERS</text>
-          <text x="40" y="119" fill="#ffc35c" font-family="Inter, sans-serif" font-weight="700" font-size="12" letter-spacing="9">OF INDIA · SERVICE ALL OVER INDIA &amp; GLOBE</text>
-          <rect x="30" y="192" width="540" height="14" rx="2" fill="#05080d"/>
-          <rect x="560" y="60" width="26" height="132" fill="#05080d" opacity=".4"/>
-          <!-- cab -->
-          <path d="M594 192V96q0-26 28-26h86q34 0 56 30l50 54q26 6 30 30v14H594z" fill="url(#gCab)"/>
-          <path d="M594 70h114q34 0 56 30l12 14" fill="none" stroke="#ffb25b" stroke-width="2.500" opacity=".8"/>
-          <path d="M742 84h30q22 4 40 30l22 24H742z" fill="url(#gGlass)"/>
-          <path d="M650 90h82v48h-82z" fill="url(#gGlass)" opacity=".75"/>
-          <rect x="660" y="144" width="60" height="5" rx="2" fill="#000" opacity=".4"/>
-          <rect x="600" y="150" width="46" height="34" rx="3" fill="#0a0f17"/>
-          <!-- exhaust + tank -->
-          <rect x="598" y="8" width="9" height="130" rx="3" fill="url(#gTank)"/>
-          <rect x="610" y="20" width="7" height="118" rx="3" fill="url(#gTank)" opacity=".8"/>
-          <rect x="656" y="176" width="96" height="34" rx="16" fill="url(#gTank)"/>
-          <rect x="860" y="190" width="38" height="14" rx="3" fill="#090d14"/>
-          <rect x="880" y="156" width="12" height="9" rx="3" fill="#fff6d6"/>
-          <!-- wheels -->
-          <g class="wh"><circle cx="150" cy="226" r="32" fill="#06080c"/><circle cx="150" cy="226" r="19" fill="url(#gRim)"/><path d="M150 208v36M132 226h36M137 213l26 26M163 213l-26 26" stroke="#141a24" stroke-width="3"/><circle cx="150" cy="226" r="5" fill="#0b0f16"/></g>
-          <g class="wh"><circle cx="222" cy="226" r="32" fill="#06080c"/><circle cx="222" cy="226" r="19" fill="url(#gRim)"/><path d="M222 208v36M204 226h36M209 213l26 26M235 213l-26 26" stroke="#141a24" stroke-width="3"/><circle cx="222" cy="226" r="5" fill="#0b0f16"/></g>
-          <g class="wh"><circle cx="682" cy="226" r="32" fill="#06080c"/><circle cx="682" cy="226" r="19" fill="url(#gRim)"/><path d="M682 208v36M664 226h36M669 213l26 26M695 213l-26 26" stroke="#141a24" stroke-width="3"/><circle cx="682" cy="226" r="5" fill="#0b0f16"/></g>
-          <g class="wh"><circle cx="752" cy="226" r="32" fill="#06080c"/><circle cx="752" cy="226" r="19" fill="url(#gRim)"/><path d="M752 208v36M734 226h36M739 213l26 26M765 213l-26 26" stroke="#141a24" stroke-width="3"/><circle cx="752" cy="226" r="5" fill="#0b0f16"/></g>
-          <g class="wh"><circle cx="822" cy="226" r="32" fill="#06080c"/><circle cx="822" cy="226" r="19" fill="url(#gRim)"/><path d="M822 208v36M804 226h36M809 213l26 26M835 213l-26 26" stroke="#141a24" stroke-width="3"/><circle cx="822" cy="226" r="5" fill="#0b0f16"/></g>
+          <image class="wheel-spin" data-cx="138.40" data-cy="230.80" href="assets/wheel-hub-1.png" x="120.15" y="212.55" width="36.5" height="36.5"/>
+          <image class="wheel-spin" data-cx="220.03" data-cy="230.80" href="assets/wheel-hub-2.png" x="201.78" y="212.55" width="36.5" height="36.5"/>
+          <image class="wheel-spin" data-cx="302.21" data-cy="230.80" href="assets/wheel-hub-3.png" x="283.96" y="212.55" width="36.5" height="36.5"/>
+          <image class="wheel-spin" data-cx="596.13" data-cy="230.80" href="assets/wheel-hub-4.png" x="577.88" y="212.55" width="36.5" height="36.5"/>
+          <image class="wheel-spin" data-cx="792.13" data-cy="230.80" href="assets/wheel-hub-5.png" x="773.88" y="212.55" width="36.5" height="36.5"/>
         </svg>
         <div class="beam"></div>
       </div>

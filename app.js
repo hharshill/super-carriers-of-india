@@ -40,10 +40,20 @@
       dx.fillStyle='rgba(255,205,120,'+o.a+')';dx.beginPath();dx.arc(o.x,o.y,o.r,0,6.283);dx.fill();}
   }
 
+  var wheelNodes=$$('.wheel-spin'), lastTruckX=null, wheelAngle=0;
   function hero(p,now){
     var e=clamp((now-tStart)/3200), ei=1-Math.pow(1-e,3);
     var W=truckW, rest=(vw-W)/2, ex=ease(clamp(p/.6));
     var x=lerp(-W*1.15,rest,ei)+ex*(vw-rest+W*.15);
+    if(lastTruckX!==null){
+      var dx=x-lastTruckX, wheelRadius=Math.max(1,W*(82/2172));
+      wheelAngle+=(dx/wheelRadius)*(180/Math.PI);
+    }
+    lastTruckX=x;
+    wheelNodes.forEach(function(node){
+      var cx=Number(node.getAttribute('data-cx')), cy=Number(node.getAttribute('data-cy'));
+      node.setAttribute('transform','rotate('+wheelAngle.toFixed(2)+' '+cx+' '+cy+')');
+    });
     truck.style.transform='translate3d('+x.toFixed(1)+'px,'+(Math.sin(now*.009)*.8).toFixed(2)+'px,0)';
     truck.style.setProperty('--beam',clamp((p-.15)*1.6).toFixed(2));
     cam.style.transform='scale('+(1+p*.16).toFixed(4)+')';

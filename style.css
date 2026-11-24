@@ -252,3 +252,10 @@ input.bad{border-color:#ff5d5d}
 .foot-address{display:grid;gap:7px;width:100%;max-width:var(--max);padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.7}
 .foot-address b{color:var(--gold);font-family:Anton,sans-serif;font-weight:400;letter-spacing:.1em;font-size:15px}
 .foot-address a{color:var(--gold);text-decoration:none;font-size:12px}
+
+/* Realistic truck cutout sizing; preserve the existing site palette. */
+.truck{display:block;width:100%;height:auto;overflow:visible}
+
+/* Realistic truck branding and synchronized rotating wheel hubs */
+.truck-brand text{paint-order:stroke;stroke:rgba(2,8,13,.28);stroke-width:.65px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5))}
+.wheel-spin{pointer-events:none}
